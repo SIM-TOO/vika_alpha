@@ -1,0 +1,103 @@
+/* MAIN */
+
+.main {
+    @apply flex flex-col items-center;
+}
+
+.main__box {
+    @apply ml-auto mr-auto flex justify-between;
+}
+
+.logo {
+    @apply mt-5 mb-5;
+
+    user-select: 'none';
+    -webkit-user-drag: none;
+    /* 드래그 방지 */
+    -webkit-user-drag: none;
+    /* 사파리 드래그 방지 */
+    pointer-events: none;
+    /* 클릭 방지 */
+    -webkit-touch-callout: none;
+    /* iOS에서의 터치 콜아웃 방지 */
+    -webkit-user-select: none;
+    /* 사용자 선택 방지 */
+    -khtml-user-select: none;
+    /* Konqueror에서의 사용자 선택 방지 */
+    -moz-user-select: none;
+    /* 구형 Firefox에서의 사용자 선택 방지 */
+    -ms-user-select: none;
+    /* 인터넷 익스플로러에서의 사용자 선택 방지 */
+    user-select: none;
+    /* 기본 사용자 선택 방지 */
+}
+
+/* L BOX */
+.l__box {
+    @apply bg-[#1F1F1F] mr-2.5;
+    width: 354px;
+    height: 930px;
+    border-radius: 5px;
+}
+
+.l__box__2 {
+    @apply w-[334px] h-[860px] bg-black ml-2.5 rounded-[5px];
+}
+
+.l__title {
+    @apply text-white mt-5 ml-[22px] mb-2.5 pointer-events-none;
+}
+
+.l__name {
+    @apply text-white ml-3 pt-5 pointer-events-none;
+}
+
+.line {
+    @apply w-[310px] h-[1px] mt-[30px] mb-[30px] ml-3 bg-[#525060]
+}
+
+.l__name__2 {
+    @apply text-white mt-[30px] ml-[12px] mb-[14px] pointer-events-none;
+}
+
+.l__name__3 {
+    @apply text-white ml-3 pointer-events-none;
+}
+
+.input__box {
+    @apply ml-3 w-[310px] h-[32px] bg-[#1F1F1F] text-white mt-2.5 rounded-[3px] cursor-default px-3 py-1.5;
+}
+
+.l__name__4 {
+    @apply text-white ml-3 mt-5 pointer-events-none;
+}
+
+.l__video__data {
+    @apply ml-3 bg-[#1F1F1F] text-white mt-2.5 rounded-[3px] cursor-default px-3 py-1.5;
+    width: 310px;
+    height: 32px;
+}
+
+.l__button__1 {
+    @apply mt-[313px] ml-3 w-[310px] h-[40px] bg-[#F6FD6D] rounded-[5px];
+}
+
+.l__button__2{
+    @apply mt-[14px] w-[310px] ml-3 h-[40px] bg-[#1F1F1F] text-[#FFFFFF4D] rounded-[5px];
+}
+
+
+/* R BOX */
+.r__box__1 {
+    @apply bg-[#1F1F1F];
+    width: 1516px;
+    height: 638px;
+    border-radius: 5px;
+}
+
+.r__box__2 {
+    @apply bg-[#1F1F1F] mt-2.5;
+    width: 1516px;
+    height: 282px;
+    border-radius: 5px;
+}

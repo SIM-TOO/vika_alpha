@@ -1,0 +1,21 @@
+.main {
+    @apply ml-3;
+    user-select: 'none';
+}
+
+.select__box {
+    @apply text-white rounded-[3px] cursor-pointer flex items-center justify-between px-3;
+    width: 310px;
+    height: 32px;
+    background: #1F1F1F;
+    margin-top: 10px;
+    
+}
+
+.ul__style {
+    @apply absolute bg-[#1F1F1F] rounded-[3px] text-white w-[310px] mt-1;
+}
+
+.li__style {
+    @apply px-3 py-2 mt-2 mb-2 cursor-pointer hover:bg-[#626262];
+}
