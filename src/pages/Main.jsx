@@ -7,6 +7,7 @@ import '../styles/font/font.css'
 import SelectBox from '../components/SelectBox.jsx';
 import logo from '../assets/logo.svg';
 import VideoDropzone from '../components/VideoDropzone.jsx';
+import VideoPlay from '../components/VideoPlay.jsx';
 
 const Main = () => {
   const cx = cs.bind(styles);
@@ -17,13 +18,23 @@ const Main = () => {
   const DenoiseModel = ['디노이즈모델1', '디노이즈모델2'];
   const Format = ['mp4', 'avi']
   const Resolution = ['X2', 'X3', 'FHD', '4K']
-
   const [selectedFeature, setSelectedFeature] = useState(Model[0]);
   const [inputData, setInputData] = useState('');
 
-
-
   // R BOX 1
+  const [videoName, setVideoName] = useState('VIDEO NAME');
+  const [videoSrc, setVideoSrc] = useState(null);
+
+  const handleVideoInfo = (info) => {
+    setInputData(info);
+    console.log(info);
+  };
+
+  const handleVideoSrc = (url) => {
+    setVideoSrc(url);
+    console.log(url);
+  };
+
 
 
   return (
@@ -97,19 +108,12 @@ const Main = () => {
         <div>
           <div className={cx('r__box__1')}>
 
-            <p className='T2 text-white pt-[18px] pl-[22px] pb-[10px]'>VIDEO NAME</p>
-
-            <VideoDropzone />
-
-
-
-
-
-
-
-
-
-
+            <p className='T2 text-white pt-[18px] pl-[22px] pb-[10px]'>{videoName}</p>
+            {videoSrc ? (
+              <VideoPlay videoSrc={videoSrc} />
+            ) : (
+              <VideoDropzone onVideoInfo={handleVideoInfo} onLocalVideoUrl={handleVideoSrc} />
+            )}
           </div>
 
 

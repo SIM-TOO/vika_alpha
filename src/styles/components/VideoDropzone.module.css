@@ -1,0 +1,7 @@
+.main {
+    @apply w-[1516px] h-[499px] bg-black flex items-center justify-center text-white;
+}
+
+.text {
+    @apply text-center cursor-default;
+}
